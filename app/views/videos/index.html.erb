@@ -1,0 +1,7 @@
+<ul>
+  <% @videos.each do |video| %>
+    <li>
+      <%= video.name %>'s movies: <%= video.movies.map(&:name).join(' ') %>
+    </li>
+  <% end %>
+</ul>
